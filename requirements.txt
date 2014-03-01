@@ -3,6 +3,7 @@ Pygments==1.6
 South==0.8.4
 argparse==1.2.1
 distribute==0.6.24
+ipython==1.2.1
 psycopg2==2.5.2
 pudb==2013.5.1
 urwid==1.2.0

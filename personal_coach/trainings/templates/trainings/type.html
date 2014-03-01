@@ -1,0 +1,11 @@
+{% extends 'trainings/base.html' %}
+{% block title %}Training types{% endblock %}
+{% block body %}
+<h2>Training types</h2>
+<ol>{% for item in training_types %}
+    <li>{{item.name}}
+    {% if item.description %}: {{item.description}}{%endif%}
+    ({{item.get_load_display}})
+    </li>
+{% endfor %}</ol>
+{% endblock %}
