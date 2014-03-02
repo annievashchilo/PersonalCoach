@@ -35,6 +35,6 @@ class TrainingType(models.Model):
                 self.get_load_display(),
                 )
 
-# register models in admin
+
 from django.contrib import admin
 admin.site.register(TrainingType)

@@ -8,8 +8,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import sys
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -68,6 +69,12 @@ DATABASES = {
         'HOST': 'localhost',
     }
 }
+
+if 'test' in sys.argv:
+    DATABASES['default'] = {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'tests.db',
+            }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/

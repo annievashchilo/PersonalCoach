@@ -6,5 +6,6 @@ distribute==0.6.24
 ipython==1.2.1
 psycopg2==2.5.2
 pudb==2013.5.1
+pytz==2013.9
 urwid==1.2.0
 wsgiref==0.1.2
